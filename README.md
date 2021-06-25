@@ -12,7 +12,7 @@ Skill test validation with [Spring Boot](https://spring.io/projects/spring-boot)
 * [Validation](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation/2.5.1)
 
 # Deployment
-This application has being deployed to Heroku!
+This application has being deployed to [Heroku](https://heroku.com/)
 
 ## Credit 
 Happy coding 🔥, feel free!
