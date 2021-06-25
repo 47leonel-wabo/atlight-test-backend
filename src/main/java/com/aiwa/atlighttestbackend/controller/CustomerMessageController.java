@@ -38,4 +38,9 @@ public class CustomerMessageController {
     public ResponseEntity<CustomerMessage> getMessageById(@PathVariable final Long id) {
         return new ResponseEntity<>(mMessageService.getMessageById(id), OK);
     }
+
+    @GetMapping(path = "/count")
+    public ResponseEntity<Long> countMessages() {
+        return new ResponseEntity<>(mMessageService.countMessages(), OK);
+    }
 }

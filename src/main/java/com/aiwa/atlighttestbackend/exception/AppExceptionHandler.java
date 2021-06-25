@@ -16,7 +16,7 @@ public class AppExceptionHandler {
     public ResponseEntity<Object> handleApiRequestException(AppException exception) {
         ExceptionModel exceptionModel = new ExceptionModel(
                 exception.getMessage(),
-                exception.getLocalizedMessage(),
+                "That is a bad request",
                 LocalDate.now());
         return new ResponseEntity<>(exceptionModel, BAD_REQUEST);
     }

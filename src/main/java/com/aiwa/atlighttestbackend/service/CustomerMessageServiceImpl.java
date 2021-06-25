@@ -43,5 +43,9 @@ public class CustomerMessageServiceImpl implements CustomerMessageService {
         return optionalCustomerMessage.get();
     }
 
+    @Override
+    public Long countMessages() {
+        return mCustomerMessageRepo.count();
+    }
     // TODO: implement other CRUD methods and business logic
 }

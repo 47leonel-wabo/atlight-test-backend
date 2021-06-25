@@ -12,4 +12,6 @@ public interface CustomerMessageService {
     void deleteMessageById(Long msgId);
 
     CustomerMessage getMessageById(Long id);
+
+    Long countMessages();
 }
