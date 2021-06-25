@@ -33,4 +33,9 @@ public class CustomerMessageController {
     public ResponseEntity<CustomerMessage> addMessages(@RequestBody @Valid final CustomerMessage message) {
         return new ResponseEntity<>(mMessageService.saveMessage(message), CREATED);
     }
+
+    @GetMapping(path = "/{id}")
+    public ResponseEntity<CustomerMessage> getMessageById(@PathVariable final Long id) {
+        return new ResponseEntity<>(mMessageService.getMessageById(id), OK);
+    }
 }

@@ -10,4 +10,6 @@ public interface CustomerMessageService {
     List<CustomerMessage> getAllMessages();
 
     void deleteMessageById(Long msgId);
+
+    CustomerMessage getMessageById(Long id);
 }
