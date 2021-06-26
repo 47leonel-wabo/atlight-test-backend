@@ -15,6 +15,7 @@ import static org.springframework.http.HttpStatus.OK;
 
 @RestController
 @RequestMapping(path = "/api/messages")
+@CrossOrigin(origins = "*", maxAge = 1200) // 10 minutes
 public class CustomerMessageController {
 
     private final CustomerMessageServiceImpl mMessageService;
